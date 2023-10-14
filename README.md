@@ -25,6 +25,12 @@ The application will then be accessible at:
 
 http://localhost:3000
 
+To test the application:
+
+```
+npm test
+```
+
 ### Technology stack used
 - [X] React 18
 - [X] Bootstrap
