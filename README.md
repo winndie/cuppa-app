@@ -26,6 +26,6 @@ The application will then be accessible at:
 http://localhost:3000
 
 ### Technology stack used
-[X] React 18
-[X] Bootstrap
-[X] Redux-toolkit
+- [X] React 18
+- [X] Bootstrap
+- [X] Redux-toolkit
