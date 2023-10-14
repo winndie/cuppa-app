@@ -6,6 +6,7 @@ const Readout:React.FC<{item :IReadout}> = ({item}) => {
   return (
     <Card  className='text-center'>
   <img
+    rel='preload'
     className='img-readout'
     alt={item.name}
     src={item.image}
