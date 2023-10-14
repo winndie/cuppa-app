@@ -4,7 +4,7 @@ import { IReadout } from '../types'
 
 const Readout:React.FC<{item :IReadout}> = ({item}) => {
   return (
-    <Card  className='card text-center'>
+    <Card  className='text-center'>
   <img
     className='img-readout'
     alt={item.name}
