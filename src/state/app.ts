@@ -8,6 +8,7 @@ export const appSlice = createSlice({
         drink: undefined as IReadout|undefined,
         recipes: undefined as IReadout[]|undefined,
         currentRecipe:0 as number,
+        timer: {} as NodeJS.Timer
     },
     reducers: {
         setCooking: (state, action:PayloadAction<IReadout>) => {
@@ -16,7 +17,10 @@ export const appSlice = createSlice({
             state.recipes = action.payload.recipes
             state.currentRecipe = 0
         },      
-        setCurrentRecipe: (state) => {
+        setTimer: (state, action:PayloadAction<NodeJS.Timer>) => {
+            state.timer = action.payload
+        },
+            setCurrentRecipe: (state) => {
             if(!!state.recipes && state.currentRecipe === state.recipes?.length -1){
                 state.cooking = false
                 state.currentRecipe = 0
@@ -33,4 +37,5 @@ export const appSlice = createSlice({
 export const {
     setCooking,
     setCurrentRecipe,
+    setTimer,
 } = appSlice.actions
