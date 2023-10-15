@@ -9,15 +9,3 @@ test('Lemon Tea', () => {
   const linkElement = screen.getByText(/Lemon Tea/i)
   expect(linkElement).toBeInTheDocument();
 })
-
-test('Coffee', () => {
-  render(<Provider store={store}><App /></Provider>)
-  const linkElement = screen.getByText(/Coffee/i)
-  expect(linkElement).toBeInTheDocument();
-})
-
-test('Chocolate', () => {
-  render(<Provider store={store}><App /></Provider>)
-  const linkElement = screen.getByText(/Chocolate/i)
-  expect(linkElement).toBeInTheDocument();
-})

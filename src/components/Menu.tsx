@@ -18,7 +18,11 @@ const Menu:React.FC<{items :IReadout[]}> = ({items}) => {
   }
 
   useEffect(()=>{
-    clearInterval(timer)
+    if(!!timer)
+    {
+      clearInterval(timer)
+      dispatch(setTimer(undefined))
+    }
   },[dispatch])
 
   return (

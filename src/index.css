@@ -595,9 +595,8 @@ progress {
 
 .img-readout {
   margin-top: 10px;  
-  max-width: 128px;
-  height: auto;
   align-self: center;
+  transform: scale(0.4);
 }
 
 .img-fluid {
