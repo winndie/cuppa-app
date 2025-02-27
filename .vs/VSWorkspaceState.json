@@ -4,7 +4,10 @@
     "\\src",
     "\\src\\components",
     "\\src\\constants",
-    "\\src\\state"
+    "\\src\\images",
+    "\\src\\state",
+    "\\src\\types"
   ],
+  "SelectedNode": "\\src\\.env",
   "PreviewInSolutionExplorer": false
 }

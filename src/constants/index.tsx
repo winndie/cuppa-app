@@ -1,15 +1,15 @@
 import { Drinks, IReadout, Recipes } from '../types'
 
-const LemomTeaImg = '../images/LemonTea.svg'
-const CoffeeImg = '../images/Coffee.svg'
-const ChocolateImg = '../images/Chocolate.svg'
-const BoilWater = '../images/BoilWater.svg'
-const BrewCoffee = '../images/BrewCoffee.svg'
-const AddChocolate = '../images/AddChocolate.svg'
-const AddLemon = '../images/AddLemon.svg'
-const AddSugarMilk = '../images/AddSugarMilk.svg'
-const PourWater = '../images/PourWater.svg'
-const TeaBag = '../images/TeaBag.svg'
+const LemomTeaImg = 'images/LemonTea.svg'
+const CoffeeImg = 'images/Coffee.svg'
+const ChocolateImg = 'images/Chocolate.svg'
+const BoilWater = 'images/BoilWater.svg'
+const BrewCoffee = 'images/BrewCoffee.svg'
+const AddChocolate = 'images/AddChocolate.svg'
+const AddLemon = 'images/AddLemon.svg'
+const AddSugarMilk = 'images/AddSugarMilk.svg'
+const PourWater = 'images/PourWater.svg'
+const TeaBag = 'images/TeaBag.svg'
 
 export const LemonTea = {
     name: Drinks["LemonTea"].toString(),

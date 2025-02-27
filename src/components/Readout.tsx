@@ -5,24 +5,28 @@ import { Spinner } from 'reactstrap'
 
 const Readout: React.FC<{ item: IReadout }> = ({ item }) => {
 
-    const [url, setUrl] = useState<string | null>(null);
+    const [base64, setBase64] = useState<string | null>(null);
 
     useEffect(() => {
-        fetch(item.imageUrl)
+        fetch(window.location + item.imageUrl)
             .then((response) => response.text())
-            .then((data) => setUrl(data))
+            .then((svgData) => {
+                const base64String = btoa(unescape(encodeURIComponent(svgData)))
+                setBase64(`data:image/svg+xml;base64,${base64String}`)
+            })
     }, [item])
 
     return (
-        !url ? <Spinner /> :
-        <Card className='text-center'>
-                <span dangerouslySetInnerHTML={{ __html: url }} className='img-readout' />
-            <CardBody>
-                <CardTitle tag="h5">
-                    {item.name}
-                </CardTitle>
-            </CardBody>
-        </Card>
+        base64 ?
+            <Card className='text-center'>
+                <img src={window.location + item.imageUrl} alt={window.location + item.imageUrl} width='400px' height='400px' />
+                <CardBody>
+                    <CardTitle tag="h5">
+                        {item.name}
+                    </CardTitle>
+                </CardBody>
+            </Card>
+            : <Spinner />
     )
 }
 
