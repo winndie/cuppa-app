@@ -1,43 +1,44 @@
-import { ReactComponent as LemomTeaImg } from '../images/LemonTea.svg'
-import { ReactComponent as CoffeeImg } from '../images/Coffee.svg'
-import { ReactComponent as ChocolateImg } from '../images/Chocolate.svg'
-import { ReactComponent as BoilWater } from '../images/BoilWater.svg'
-import { ReactComponent as BrewCoffee } from '../images/BrewCoffee.svg'
-import { ReactComponent as AddChocolate } from '../images/AddChocolate.svg'
-import { ReactComponent as AddLemon } from '../images/AddLemon.svg'
-import { ReactComponent as AddSugarMilk } from '../images/AddSugarMilk.svg'
-import { ReactComponent as PourWater } from '../images/PourWater.svg'
-import { ReactComponent as TeaBag } from '../images/TeaBag.svg'
 import { Drinks, IReadout, Recipes } from '../types'
+
+const LemomTeaImg = '../images/LemonTea.svg'
+const CoffeeImg = '../images/Coffee.svg'
+const ChocolateImg = '../images/Chocolate.svg'
+const BoilWater = '../images/BoilWater.svg'
+const BrewCoffee = '../images/BrewCoffee.svg'
+const AddChocolate = '../images/AddChocolate.svg'
+const AddLemon = '../images/AddLemon.svg'
+const AddSugarMilk = '../images/AddSugarMilk.svg'
+const PourWater = '../images/PourWater.svg'
+const TeaBag = '../images/TeaBag.svg'
 
 export const LemonTea = {
     name: Drinks["LemonTea"].toString(),
-    image: LemomTeaImg,
+    imageUrl: LemomTeaImg,
     recipes: [
-        { name: Recipes["BoilWater"].toString(), image: BoilWater },
-        { name: Recipes["SteepWater"].toString(), image: TeaBag },
-        { name: Recipes["PourTea"].toString(), image: PourWater },
-        { name: Recipes["AddLemon"].toString(), image: AddLemon }
+        { name: Recipes["BoilWater"].toString(), imageUrl: BoilWater },
+        { name: Recipes["SteepWater"].toString(), imageUrl: TeaBag },
+        { name: Recipes["PourTea"].toString(), imageUrl: PourWater },
+        { name: Recipes["AddLemon"].toString(), imageUrl: AddLemon }
     ] as IReadout[]
 } as IReadout
 
 export const Coffee = {
     name: Drinks["Coffee"].toString(),
-    image: CoffeeImg,
+    imageUrl: CoffeeImg,
     recipes: [
-        { name: Recipes["BoilWater"].toString(), image: BoilWater },
-        { name: Recipes["BrewCoffee"].toString(), image: BrewCoffee },
-        { name: Recipes["PourCoffee"].toString(), image: PourWater },
-        { name: Recipes["AddSugarMilk"].toString(), image: AddSugarMilk },
+        { name: Recipes["BoilWater"].toString(), imageUrl: BoilWater },
+        { name: Recipes["BrewCoffee"].toString(), imageUrl: BrewCoffee },
+        { name: Recipes["PourCoffee"].toString(), imageUrl: PourWater },
+        { name: Recipes["AddSugarMilk"].toString(), imageUrl: AddSugarMilk },
     ] as IReadout[]
 } as IReadout
 
 export const Chocolate = {
     name: Drinks["Chocolate"].toString(),
-    image: ChocolateImg,
+    imageUrl: ChocolateImg,
     recipes: [
-        { name: Recipes["BoilWater"].toString(), image: BoilWater },
-        { name: Recipes["AddChocolate"].toString(), image: AddChocolate },
-        { name: Recipes["PourChocolate"].toString(), image: PourWater },
+        { name: Recipes["BoilWater"].toString(), imageUrl: BoilWater },
+        { name: Recipes["AddChocolate"].toString(), imageUrl: AddChocolate },
+        { name: Recipes["PourChocolate"].toString(), imageUrl: PourWater },
     ] as IReadout[]
 } as IReadout

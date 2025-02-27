@@ -1,5 +1,3 @@
-import { FunctionComponent, SVGProps } from "react"
-
 export enum Drinks {
     LemonTea = 'Lemon Tea',
     Coffee = 'Coffee',
@@ -20,6 +18,6 @@ export enum Recipes {
 
 export interface IReadout {
     name: string
-    image: FunctionComponent<SVGProps<SVGSVGElement>>
+    imageUrl: string
     recipes: IReadout[]
 }
