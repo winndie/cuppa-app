@@ -17,7 +17,7 @@ const App:React.FC = () => {
   },[dispatch])
 
   return (
-    !!drinks?
+    drinks?
     <div className="container">
     {cooking && !!recipes ?
       <div className='readout'>

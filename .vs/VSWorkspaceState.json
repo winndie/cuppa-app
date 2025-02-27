@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\constants",
+    "\\src\\state"
   ],
   "PreviewInSolutionExplorer": false
 }
